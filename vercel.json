@@ -6,18 +6,18 @@
             "status": 200
         },
         {
-            "src": "/Login",
-            "dest": "/Login",
+            "src": "/login",
+            "dest": "/login",
             "status": 200
         },
         {
-            "src": "/Confirm",
-            "dest": "/Confirm",
+            "src": "/confirm",
+            "dest": "/confirm",
             "status": 200
         },
         {
-            "src": "/Search",
-            "dest": "/Search",
+            "src": "/search",
+            "dest": "/search",
             "status": 200
         }
     ]

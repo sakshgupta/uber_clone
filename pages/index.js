@@ -24,7 +24,7 @@ export default function Home() {
       }
       else {
         setUser(null)
-        router.push('/Login')
+        router.push('/login')
       }
     })
   }, [])
@@ -47,19 +47,19 @@ export default function Home() {
         </Header>
         {/* ActionButtons */}
         <ActionButtons>
-          <Link href='/Search'>
+          <Link href='/search'>
             <ActionButton>
               <ActionButtonImg src='https://i.ibb.co/cyvcpfF/uberx.png' />
               Ride
             </ActionButton>
           </Link>
-          <Link href='/Search'>
+          <Link href='/search'>
             <ActionButton>
               <ActionButtonImg src='https://i.ibb.co/n776JLm/bike.png' />
               Wheels
             </ActionButton>
           </Link>
-          <Link href='/Search'>
+          <Link href='/search'>
             <ActionButton>
               <ActionButtonImg src='https://i.ibb.co/5RjchBg/uberschedule.png' />
               Reserved
