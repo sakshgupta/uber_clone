@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import tw from 'tailwind-styled-components'
-import { CarList } from '../data/carList'
+import { CarList } from '../../data/carList'
 
 const RideSelector = ({ pickupCoordinates, dropoffCoordinates }) => {
     const [rideDuration, setRideDuration] = useState(0)
