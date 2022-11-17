@@ -45,7 +45,7 @@ const Search = () => {
             </SavedPlaces>
             {/* Confirm Location */}
             <Link href={{
-                pathname: '/confirm',
+                pathname: '/Confirm',
                 query: {
                     pickup: pickup,
                     dropoff: dropoff,
