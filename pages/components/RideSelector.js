@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import tw from 'tailwind-styled-components'
-import { carList } from '../data/carList'
+import { CarList } from '../data/CarList'
 
 const RideSelector = ({ pickupCoordinates, dropoffCoordinates }) => {
     const [rideDuration, setRideDuration] = useState(0)
@@ -18,9 +18,9 @@ const RideSelector = ({ pickupCoordinates, dropoffCoordinates }) => {
     return (
         <Wrapper>
             <Title>Choose a ride, or swipe up for more</Title>
-            <CarList>
+            <CarListContainer>
                 {
-                    carList.map((car, index) => (
+                    CarList.map((car, index) => (
                         <Car key={index}>
                             <CarImage src={car.imgUrl} />
                             <CarDetails>
@@ -32,7 +32,7 @@ const RideSelector = ({ pickupCoordinates, dropoffCoordinates }) => {
                     ))
                 }
 
-            </CarList>
+            </CarListContainer>
         </Wrapper>
     )
 }
@@ -54,7 +54,7 @@ py-2
 border-b
 `
 // Car List
-const CarList = tw.div`
+const CarListContainer = tw.div`
 overflow-y-scroll
 `
 // Car
