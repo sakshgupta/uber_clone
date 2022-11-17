@@ -1,8 +1,23 @@
 {
     "routes": [
         {
-            "src": "/[^.]+",
+            "src": "/",
             "dest": "/",
+            "status": 200
+        },
+        {
+            "src": "/Login",
+            "dest": "/Login",
+            "status": 200
+        },
+        {
+            "src": "/Confirm",
+            "dest": "/Confirm",
+            "status": 200
+        },
+        {
+            "src": "/Search",
+            "dest": "/Search",
             "status": 200
         }
     ]
