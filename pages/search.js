@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components"
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-const search = () => {
+const Search = () => {
     const [pickup, setPickup] = useState("");
     const [dropoff, setDropoff] = useState("");
 
@@ -61,7 +61,7 @@ const search = () => {
     )
 }
 
-export default search
+export default Search
 
 const Wrapper = tw.div`
 bg-gray-200

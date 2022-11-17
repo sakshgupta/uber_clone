@@ -5,10 +5,10 @@ import Map from './components/Map'
 import RideSelector from './components/RideSelector'
 import { useRouter } from 'next/router'
 
-const confirm = () => {
+const Confirm = () => {
     const router = useRouter();
 
-    const { pickup, dropoff } = router.query
+    const { pickup, dropoff } = router.query // To get the pickup and dropoff names from the url
 
     const [pickupCoordinates, setPickupCoordinates] = useState([0, 0]);
     const [dropoffCoordinates, setDropoffCoordinates] = useState([0, 0]);
@@ -73,7 +73,7 @@ const confirm = () => {
     )
 }
 
-export default confirm
+export default Confirm
 
 const Wrapper = tw.div`
 flex
